@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+    <input type="button" id="hider" value="Click to hide the text" />
+
+    <div id="text">Text</div>
+
+    <script>
+    const hiderButton = document.getElementById("hider")
+    hiderButton.onclick = ()=>{
+        document.getElementById("text").hidden = true
+    }
+    
+    // hider.onclick = ()=>{
+    //     text.hidden = true   I guess that is isn't the best practice but it also work in the perticular case
+    // }                        I think that when working with a dedicated js file js will throw an arror because it won't know what hider and text are
+    </script>
+
+</body>
+</html>
