@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sliding menu</title>
+</head>
+<body>
+    <menu>
+        <P id="menu-button">menu</P>
+        <ul id="options">
+                <li>this</li>
+                <li>was</li>
+                <li>hidden</li>
+                <li>and</li>
+                <li>now</li>
+                <li>it's</li>
+                <li>not</li>
+            </ul>
+    </menu>
+    <script>
+        const m = document.getElementById("menu-button")
+        function hidingFunction(){
+            if (options.hidden == true) options.hidden = false
+            else options.hidden = true
+        }
+        m.addEventListener("click", hidingFunction)
+    </script>
+</body>
+</html>
