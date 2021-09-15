@@ -25,6 +25,7 @@ function createBall(ballSize){
     ball.style.textAlign = "center"
     ball.style.fontSize = `${ballSize}px`
     ball.style.position = "absolute"
+    ball.style.transition = "all 1s"
     return ball
 }
 function createBallOnField(ballSize){
