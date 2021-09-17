@@ -44,10 +44,10 @@
             document.body.append(tooltipElem)
             const targetCoords = target.getBoundingClientRect()
             // const tooltipCoords = tooltipElem.getBoundingClientRet()
-            let tooltipLeft = targetCoords.left
-            if (tooltipLeft < 0) tooltipLeft = 0
+            let tooltipLeft = targetCoords.left + (targetCoords.width - tooltipElem.offsetWidth)/2
+            if (tooltipLeft < 0) tooltipLeft = targetCoords.left
             let tooltiptop = targetCoords.top - tooltipElem.offsetHeight - 5
-            if (tooltiptop<0) tooltiptop = targetCoords.top + target.offsetHeight + 5
+            if (tooltiptop<0) tooltiptop = targetCoords.top + targetCoords.height + 5
 
             tooltipElem.style.left = `${tooltipLeft}px`
             tooltipElem.style.top = `${tooltiptop}px`
